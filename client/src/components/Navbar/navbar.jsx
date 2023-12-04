@@ -1,6 +1,7 @@
 import React from "react";
 import './navbar.css'
 import logo from './youtube.ico'
+import Searchbar from "./SearchBar/searchbar";
 
 function Navbar(){
     return(
@@ -16,6 +17,7 @@ function Navbar(){
                     <p className="logo_title_navbar">YouTube</p>
                 </div>
             </div>
+            <Searchbar />
         </div>
     )
 }

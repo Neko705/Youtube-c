@@ -3,6 +3,7 @@
     display: flex;
     height: calc(3.4rem - 5px);
     background-color: #121212;
+    justify-content: space-between;
 }
 
 .Burger_logo_navbar{
