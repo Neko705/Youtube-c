@@ -38,3 +38,12 @@
     color: white;
     font-weight: bold;
 }
+.User_cont_navbar{
+    margin: 0.5rem;
+    display: flex;
+    margin-top: -10px;
+}
+.User_btn{
+    cursor: pointer;
+    color: rgb(36, 36, 243);
+}
