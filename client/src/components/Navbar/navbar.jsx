@@ -8,7 +8,13 @@ import {BiUserCircle} from 'react-icons/bi'
 
 
 function Navbar(){
-    const CurrentUser=null;
+    //const CurrentUser = null;
+    const CurrentUser={
+        result:{
+            email:"xyz@gmail.com",
+            joinedOn:"2222-07-15T09:57:23.489Z",
+        },
+    };
     return(
         <div className="container_navbar">
             <div className="Burger_logo_navbar">
@@ -26,9 +32,31 @@ function Navbar(){
             <RiVideoAddLine size={24} className={"vid_bell_Navbar"}/>
             <IoMdNotificationsOutline size={24} className="vid_bell_Navbar"/>
             <div className="User_cont_navbar">
-                <p className="User_btn">
-                    <BiUserCircle size={40} aria-placeholder="Sign In"/>
-                </p>
+                {
+                    CurrentUser ? (
+                    <>
+                      <div className="channel_logo_app">
+                        <p className="fstchar_logo_app">
+                            {
+                                CurrentUser?.result.name ?(
+                                    <>
+                                    {CurrentUser?.result.name.charAt(0).toUpperCase()}
+                                    </>
+                                ):(
+                                    <>
+                                    {CurrentUser?.result.name.charAt(0).toUpperCase()}
+                                    </>)
+                            }
+                        </p>
+                      </div>
+                    </>
+                    ):(
+                    <>
+                      <p className="User_btn">
+                      <BiUserCircle size={40} aria-placeholder="Sign In"/>
+                      </p>
+                    </>
+                )}
             </div>
         </div>
     )
