@@ -12,6 +12,7 @@ function Navbar(){
     const CurrentUser={
         result:{
             email:"xyz@gmail.com",
+            name:"xyz",
             joinedOn:"2222-07-15T09:57:23.489Z",
         },
     };
@@ -44,7 +45,7 @@ function Navbar(){
                                     </>
                                 ):(
                                     <>
-                                    {CurrentUser?.result.name.charAt(0).toUpperCase()}
+                                    {CurrentUser?.result.email.charAt(0).toUpperCase()}
                                     </>)
                             }
                         </p>
