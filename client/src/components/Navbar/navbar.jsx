@@ -5,6 +5,7 @@ import Searchbar from "./SearchBar/searchbar";
 import {RiVideoAddLine} from 'react-icons/ri';
 import {IoMdNotificationsOutline} from 'react-icons/io';
 import {BiUserCircle} from 'react-icons/bi'
+import { Link } from "react-router-dom";
 
 
 function Navbar(){
@@ -24,10 +25,10 @@ function Navbar(){
                     <p></p>
                     <p></p>
                 </div>
-                <div className="logo_div_navbar">
+                <Link to={'/'} className="logo_div_navbar">
                     <img src={logo} alt="" />
                     <p className="logo_title_navbar">YouTube</p>
-                </div>
+                </Link>
             </div>
             <Searchbar />
             <RiVideoAddLine size={24} className={"vid_bell_Navbar"}/>

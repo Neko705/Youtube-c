@@ -31,6 +31,7 @@
 .logo_div_navbar{
     display: flex;
     font-size: larger;
+    text-decoration: none;
 }
 .logo_title_navbar{
     margin: auto;
