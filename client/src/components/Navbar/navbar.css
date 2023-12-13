@@ -1,5 +1,5 @@
 .container_navbar{
-    border: 1px solid;
+    border: none;
     display: flex;
     height: calc(3.4rem - 5px);
     background-color: #121212;

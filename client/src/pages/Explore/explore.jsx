@@ -2,10 +2,8 @@ import React from 'react'
 
 function Explore() {
   return (
-    <div>
-        <div>
-            Explore
-        </div>
+    <div className='container_pages'>
+        <div className="container2_pages">Home</div>
     </div>
   )
 }

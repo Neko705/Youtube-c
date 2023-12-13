@@ -9,7 +9,7 @@ function Searchlist({TitleArray,setsearchQuery}) {
         {
             TitleArray.map(m=>{
                 return <p key={m} onClick={e=>setsearchQuery(m)} className="tital_item">
-                <FaSearch />
+                <FaSearch style={{marginRight:'1rem'}} />
                 {m}
             </p>
             })
