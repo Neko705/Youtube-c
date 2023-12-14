@@ -1,6 +1,6 @@
 import React from 'react'
 import './leftsidebar.css'
-import { AiFillPlayCircle, AiFillPlaySquare, AiOutlineHome } from 'react-icons/ai';
+import { AiFillPlayCircle, AiOutlineHome } from 'react-icons/ai';
 import { SiYoutubeshorts } from 'react-icons/si';
 import { MdOutlineExplore, MdOutlineSubscriptions, MdOutlineVideoLibrary } from 'react-icons/md';
 import { FaHistory } from 'react-icons/fa';
