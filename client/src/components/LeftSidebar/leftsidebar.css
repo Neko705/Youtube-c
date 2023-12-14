@@ -28,4 +28,25 @@
     border-radius: 20px;
 }
 
+/**drawer sidebar */
+.container_drawerleftsidebar{
+    height: calc(100vh - 3.6rem);
+    position: absolute;
+    width: 100vw;
+    z-index: 500;
+}
+.container2_drawerleftsidebar{
+    background-color: #1f1e1e;
+    width: 15rem;
+    overflow-y: auto;
+}
+.drawer_leftsidebar,
+.librarybtn_leftsidebar{
+    padding-top: 0.5rem;
+    border-bottom: 2px solid;
+}
+.sidebar_icon_div p{
+    display: flex;
+    margin: 0;
+}
 
