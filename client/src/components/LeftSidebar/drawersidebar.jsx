@@ -1,13 +1,13 @@
 import React from 'react'
 import './leftsidebar.css'
-import { AiFillPlayCircle, AiOutlineHome } from 'react-icons/ai';
+import { AiFillLike, AiFillPlayCircle, AiOutlineHome } from 'react-icons/ai';
 import { SiYoutubeshorts } from 'react-icons/si';
-import { MdOutlineExplore, MdOutlineSubscriptions, MdOutlineVideoLibrary } from 'react-icons/md';
+import { MdOutlineExplore, MdOutlineSubscriptions, MdOutlineVideoLibrary, MdOutlineWatchLater } from 'react-icons/md';
 import { FaHistory } from 'react-icons/fa';
 
-function Drawersidebar() {
+function Drawersidebar({toggleDrawer,toggleDrawersidebar}) {
   return (
-    <div className='container_drawerleftsidebar'>
+    <div className='container_drawerleftsidebar' style={toggleDrawersidebar}>
         <div className="container2_drawerleftsidebar">
             <div className="drawer_leftsidebar">
                 <div className="sidebar_icon_div">
@@ -54,8 +54,42 @@ function Drawersidebar() {
                         <div className="text_icon_sidbar">Your Videos</div>
                     </p>
                 </div>
+                <div className="sidebar_icon_div">
+                    <p>
+                        <MdOutlineWatchLater className='icon_sidebar' size={25} style={{color:'white',margin:'auto 0.5rem'}}/>
+                        <div className="text_icon_sidbar">Watch Later</div>
+                    </p>
+                </div>
+                <div className="sidebar_icon_div">
+                    <p>
+                        <AiFillLike className='icon_sidebar' size={25} style={{color:'white',margin:'auto 0.5rem'}}/>
+                        <div className="text_icon_sidbar">Liked Videos</div>
+                    </p>
+                </div>
+            </div>
+            <div className="subscription_lsdbar">
+                <h3> Subscriptions</h3>
+                <div className="chanel_lsdbar">
+                    <p>C</p>
+                    <div>chanel</div>
+                </div>
+                <div className="chanel_lsdbar">
+                    <p>C</p>
+                    <div>chanel</div>
+                </div>
+                <div className="chanel_lsdbar">
+                    <p>C</p>
+                    <div>chanel</div>
+                </div>
+                <div className="chanel_lsdbar">
+                    <p>C</p>
+                    <div>chanel</div>
+                </div>
             </div>
         </div>
+        <div className="container3_drawerleftsidebar"
+        onClick={()=>toggleDrawer()}
+        ></div>
     </div>
   )
 }

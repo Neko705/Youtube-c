@@ -8,7 +8,7 @@ import {BiUserCircle} from 'react-icons/bi'
 import { Link } from "react-router-dom";
 
 
-function Navbar(){
+function Navbar({toggleDrawer}){
     //const CurrentUser = null;
     const CurrentUser={
         result:{
@@ -20,7 +20,7 @@ function Navbar(){
     return(
         <div className="container_navbar">
             <div className="Burger_logo_navbar">
-                <div className="burger">
+                <div className="burger" onClick={()=>toggleDrawer()}>
                     <p></p>
                     <p></p>
                     <p></p>
